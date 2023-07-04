@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='wynik.css') }}">
+    <title>Wynik przecięcia odcinków</title>
+</head>
+<body>
+    <h1>Wynik przecięcia odcinków</h1>
+        <p>Odcinki są współliniowe i mają nieskończenie wiele punktów przecięcia pomiędzy {{ starting_point }}, a {{ ending_point }} </p>
+    <img src="/static/plot.png" alt="Wykres">
+    <a href="/" class="button">Cofnij</a>
+</body>
+</html>

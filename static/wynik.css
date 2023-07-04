@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #23242a;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #45f3ff;
+}
+
+p {
+    color: #45f3ff;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie przycisku poziomo */
+    align-items: center; /* Wyśrodkowanie przycisku pionowo */
+    background-color: #45f3ff;
+    color: #23242a;
+    margin-top: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: fit-content; /* Dopasowanie szerokości przycisku do zawartości */
+    margin-left: auto; /* Automatyczne wyśrodkowanie przycisku na stronie */
+    margin-right: auto; /* Automatyczne wyśrodkowanie przycisku na stronie */
+}
+
+.button:hover {
+    background-color: #32d0e0;
+}
+

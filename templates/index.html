@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Obliczanie przecięcia odcinków</title>
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <h1>Obliczanie przecięcia odcinków</h1>
+            <h3>Proszę podawać liczby z dokładnością do dwóch miejsc po przecinku</h3>
+            <form action="/intersection" method="post">
+                <div class="inputBox">
+                    <input type="number" id="x1" name="x1" step=".01" required>
+                    <span>Współrzędna x punktu A dla odcinka 1:</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" id="y1" name="y1" step=".01" required>
+                    <span>Współrzędna y punktu A dla odcinka 1:</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" id="x2" name="x2" step=".01" required>
+                    <span>Współrzędna x punktu B dla odcinka 1:</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" id="y2" name="y2" step=".01" required>
+                    <span>Współrzędna y punktu B dla odcinka 1:</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" id="x3" name="x3" step=".01" required>
+                    <span>Współrzędna x punktu C dla odcinka 2:</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" id="y3" name="y3" step=".01" required>
+                    <span>Współrzędna y punktu C dla odcinka 2:</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" id="x4" name="x4" step=".01" required>
+                    <span>Współrzędna x punktu D dla odcinka 2:</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" id="y4" name="y4" step=".01" required>
+                    <span>Współrzędna y punktu D dla odcinka 2:</span>
+                    <i></i>
+                </div>
+
+                <input type="submit" value="Oblicz">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
